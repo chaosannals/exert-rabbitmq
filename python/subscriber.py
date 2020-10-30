@@ -11,7 +11,7 @@ connection = pika.BlockingConnection(
 )
 channel = connection.channel()
 # 申明消息队列，消息在这个队列传递，如果不存在，则创建队列
-channel.queue_declare(queue='python-exert', durable=False)
+channel.queue_declare(queue='python-exert', durable=True)
 
 # 回调函数，处理消息队列中的消息。
 def callback(ch, method, properties, body):
