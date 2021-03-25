@@ -1,0 +1,20 @@
+{
+    "name": "chaosannals/exert-rabbitmq",
+    "description": "rabbitmq",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "chaosannals",
+            "email": "chaosannals@outlook.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "exert\\": "main"
+        }
+    },
+    "require": {
+        "php-amqplib/php-amqplib": "^3.0"
+    }
+}
